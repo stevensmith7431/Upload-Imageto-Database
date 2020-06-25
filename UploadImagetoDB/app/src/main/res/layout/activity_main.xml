@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Unit"
+                android:textColor="#ff669900"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spins"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:padding="3dp">
+
+            </Spinner>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingTop="20dp"
+            android:text="Gender"
+            android:textColor="#ff669900"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <RadioGroup
+                android:id="@+id/groupid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Female"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Transgender"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Button
+           android:id="@+id/btn_capture"
+           android:layout_width="160dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_marginTop="20dp"
+           android:background="#924CE3"
+           android:text="Capture photo"
+           android:textColor="#FFFFFF" />
+
+
+       <ImageView
+           android:id="@+id/img_preview"
+           android:layout_width="match_parent"
+           android:layout_height="200dp"
+           android:layout_gravity="center"
+           android:layout_marginLeft="40dp"
+           android:layout_marginRight="40dp"
+           android:layout_marginTop="20dp"
+           android:scaleType="fitXY" />
+
+
+        <Button
+            android:id="@+id/requestid"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="#924CE3"
+            android:text="Request"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</ScrollView>
